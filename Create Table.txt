@@ -1,0 +1,75 @@
+
+-- Drop existing tables if they exist
+DROP TABLE IF EXISTS DENIZEN;
+DROP TABLE IF EXISTS ITEMS;
+DROP TABLE IF EXISTS NEXUS;
+
+-- Create DENIZEN Table
+CREATE TABLE DENIZEN (
+    netizen_id INTEGER PRIMARY KEY,
+    name TEXT,
+    nexus_id INTEGER,
+    gender TEXT,
+    role TEXT,
+    credits INTEGER,
+    status TEXT
+);
+
+-- Create ITEMS Table
+CREATE TABLE ITEMS (
+    name TEXT,
+    owner TEXT
+);
+
+-- Create NEXUS Table
+CREATE TABLE NEXUS (
+    nexus_id INTEGER PRIMARY KEY,
+    name TEXT,
+    overseer INTEGER
+);
+
+-- Insert data into DENIZEN
+INSERT INTO DENIZEN (netizen_id, name, nexus_id, gender, role, credits, status) VALUES
+(1, 'Maine Augusta', 1, 'm', 'bartender', 500, 'neutral'),
+(2, 'Payup Money', 2, 'm', 'mind hacker', 300, 'neutral'),
+(3, 'Dorio Gunnarsdóttir', 2, 'f', 'Mercenary', 50, 'Deceased'),
+(4, 'Pilar', 1, 'm', 'Techie', 200, 'Deceased'),
+(5, 'Kiwi Joytoy', 3, 'f', 'Netrunner', 300, 'Allied'),
+(6, 'Rebecca Martinez', 3, 'f', 'Teacher', 800, 'Allied'),
+(7, 'Gloria Martinez', 1, 'f', 'Medtech', 30, 'Allied'),
+(8, 'Falco Augusta', 2, 'm', 'Digital Nomad', 100, 'Allied'),
+(9, 'Adam Smasher', 1, 'm', 'bodyguard', 800, 'Enemy'),
+(10, 'Faraday Martinez', 1, 'm', 'Corpo', 4500, 'Enemy'),
+(11, 'Katsuo Tanaka', 3, 'f', 'Corpo', 5000, 'Enemy');
+(12, 'Anon', 1, 'm', '?', 2,000,000, 'Amnesiac ');
+
+-- Insert data into ITEMS
+INSERT INTO ITEMS (name, owner) VALUES
+('Tram Pass', NULL),
+('SQLpad', 'Maine Augusta'),
+('Tattered ushanka', 'Payup Money'),
+('Luminescent punk jacket', 'Gloria Martinez'),
+('Anti-tear GRAFFITI bandana', 'Pilar'),
+('GRAFFITI detachable collar', NULL),
+('Patched jeans', NULL),
+('Biomonitor', 'Faraday Martinez'),
+('David''s Jacket', 'David Martinez'),
+('Form-fitting fireproof splicers', 'Kiwi Joytoy');
+
+-- Insert data into NEXUS
+INSERT INTO NEXUS (nexus_id, name, overseer) VALUES
+(1, 'Mumbraxis', 6),
+(2, 'Delphoria', 8),
+(3, 'Ahametropolis', 4);
+
+-- Display data from DENIZEN table
+SELECT * FROM DENIZEN;
+
+-- Display data from ITEMS table
+SELECT * FROM ITEMS;
+
+-- Display data from NEXUS table
+SELECT * FROM NEXUS;
+
+
+

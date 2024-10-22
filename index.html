@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberPunk SQL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-box" id="topBox"></div>
+        <div class="character-box">
+            <div class="left-box">
+                <div class="character-name">David</div>
+                <img src="./images/david.png" alt="David" class="character-image">
+                <div class="dialogue" id="davidDialogue"></div>
+            </div>
+            <div class="center-button">
+                <img id="navigateImage" src="./images/holo off.png" alt="Holo Pad"
+                     onmouseover="this.src='./images/holo on.png'"
+                     onmouseout="this.src='./images/holo off.png'"
+                     onclick="openNewTab()">
+                <div class="image-label">HoloSql</div>
+            </div>
+            <div class="right-box" id="characterBox">
+                <div class="character-name" id="characterName">Maine</div>
+                <img src="./images/maine.png" alt="Maine" id="characterImage" class="character-image">
+                <div class="dialogue" id="characterDialogue"></div>
+            </div>
+        </div>
+    </div>
+    <div class="data-grid" id="dataGrid">
+        <p>NEXUS (nexus_id, name, overseer)</p>
+        <p>DENIZEN (netizen_id, name, nexus_id, gender, role, credits, status)</p>
+        <p>ITEM (nexus_id, name, overseer)</p>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
