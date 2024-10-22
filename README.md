@@ -1,28 +1,32 @@
-```markdown
 # 💻 CyberPunk-SQL 🕶️
 
 Welcome to **CyberPunk-SQL**, an immersive, cyberpunk-themed SQL learning platform. Dive into a neon-lit world where you’ll learn SQL by interacting with futuristic characters and completing hacking missions using SQL queries.
 
 ---
 
-## 🚀 Getting Started
+## 1. 🚀 Getting Started
 
 Follow these steps to get CyberPunk-SQL up and running.
 
-### 🛠️ Prerequisites
+### 1.1 🛠️ Prerequisites
 
 Before you begin, make sure you have:
 
 - A modern web browser (e.g., **Google Chrome**, **Mozilla Firefox**)
 - **Git** installed on your computer
 
-### 📥 Installation
+### 1.2 📥 Installation
 
 1. **Clone this repository** to your local machine:
-   
-   ```bash
-   git clone https://github.com/yourusername/CyberPunk-SQL.git
-   ```
+
+   git clone https://github.com/202307020048/CyberPunk-SQL.git
+
+2. **Navigate into the project folder**:
+
+   cd CyberPunk-SQL
+
+3. Open the project with your preferred editor (e.g., **VS Code** or **Sublime Text**) or directly open the `.html` files in your browser.
+
 
 2. **Navigate into the project folder**:
    
@@ -126,6 +130,3 @@ If you have any questions or need help with CyberPunk-SQL, feel free to reach ou
 
 - GitHub: [yourusername](https://github.com/202307020048)
 - Email: [your.email@example.com](mailto:202307020048@karnavatiuniversity.edu.in)
-
-Enjoy mastering SQL in this cyberpunk universe!
-```
