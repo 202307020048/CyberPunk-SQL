@@ -129,4 +129,4 @@ This project is licensed under the **MIT License** - feel free to modify, distri
 If you have any questions or need help with CyberPunk-SQL, feel free to reach out:
 
 - GitHub: [yourusername](https://github.com/202307020048)
-- Email: [your.email@example.com](mailto:202307020048@karnavatiuniversity.edu.in)
+- Email: [your.email@example.com](mailto:202307020048@karnavatiuniversity.edu.iN)
